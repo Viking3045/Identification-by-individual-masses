@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+      <section class="calculation">
+        <div class="container ">
+      <button id="openModalNotification" class="notificationButton btn">Повідомлення </button>
+      <button id="openModalIdentification" class="identificationButton">Ідентифікація об'єкта</button>
+      <button id="openModalActOfInspection" class="actOfInspectionButton btn">Акт проведення перевірки</button>
+      <button id="openModalActOfRefusal" class="actOfRefusalButton btn">Акт відмови від перевірки</button>
+      <button id="openModalRequirements" class="requirementsButton btn">Вимоги до об'єкта</button>
+      <button id="openModalRemark" class="remarkButton btn">Вести недоліки та зауваження</button>
+      <button id="openModalOrder" class="orderButton btn">Сформувати припис</button>
+      </div>
+      </section>
+      <!-- Повідомлення -->
+       <div id="myModalNotification" class="modalNotification modal">
+<div class="modal-content main">
+  <span class="closeNotification close">&times;</span>
+  <section class="calculation">
+<div class="container ">
+  <form class="form" autocomplete="off">
+      <label class="notificationName primaryTextColor">Найменування органу Держтехногенбезпеки України, посадові особи якого будуть здійснювати перевірку
+        <input class="amountNotification notificationInspectorObj input" placeholder="Введіть найменування " name="notificationInspectorObj" type="text" minlength="1" autofocus/>
+      </label>
+
+    <label class="notificationName primaryTextColor">Найменування суб’єкта господарювання, органу влади або іншого підконтрольного об’єкта 
+       <input class="amountNotification notificationObj input" placeholder="Введіть найменування " name="notificationObj" type="text" minlength="1" autofocus/>
+      </label>
+     <label class="notificationName primaryTextColor">Прізвище фізичної особи – підприємця 
+      <input class="amountNotification surnamePerson input" placeholder="Прізвище" name="surnamePerson" type="text" minlength="1" autofocus/>
+    </label>
+      <label class="notificationName primaryTextColor">Ім’я фізичної особи – підприємця 
+        <input class="amountNotification namePerson input" placeholder="Ім'я" name="namePerson" type="text" minlength="1" autofocus/>
+      </label>
+  <label class="notificationName primaryTextColor">По батькові  фізичної особи – підприємця 
+    <input class="amountNotification middleNamePerson input" placeholder="По батькові" name="middleNamePerson" type="text" minlength="1" autofocus/>
+  </label>
+      <label class="notificationName primaryTextColor">Місцезнаходження 
+        <input class="amountNotification locationObj input" placeholder="Місцезнаходження" name="locationObj" type="text" minlength="1" autofocus/>
+      </label>
+      <label class="notificationName primaryTextColor">Дата початку перевірки 
+        <input class="amountNotification dateStartNotification input"  name="dateStartNotification" type="date" minlength="1" autofocus/>
+      </label>
+      <label class="notificationName primaryTextColor">Дата закінчення перевірки  
+        <input class="amountNotification dateFinishNotification input"  name="dateFinishNotification" type="date" minlength="1" autofocus/>
+      </label>
+      <label class="notificationName primaryTextColor">Посада керівника органу Держтехногенбезпеки України 
+         <input class="amountNotification positionOfHeadOfStateTechnologicalAndEnvironmentalSafety input" placeholder="Посада керівника органу Держтехногенбезпеки України" name="positionOfHeadOfStateTechnologicalAndEnvironmentalSafety" type="text" minlength="1" autofocus/>
+      </label>
+      <label class="notificationName primaryTextColor">Прізвище керівника органу Держтехногенбезпеки України 
+        <input class="amountNotification surnameOfHeadOfStateTechnologicalAndEnvironmentalSafety input" placeholder="Посада керівника органу Держтехногенбезпеки України" name="positionOfHeadOfStateTechnologicalAndEnvironmentalSafety" type="text" minlength="1" autofocus/>
+     </label>
+     <label class="notificationName primaryTextColor">Ім’я керівника органу Держтехногенбезпеки України 
+      <input class="amountNotification nameOfHeadOfStateTechnologicalAndEnvironmentalSafety input" placeholder="Посада керівника органу Держтехногенбезпеки України" name="positionOfHeadOfStateTechnologicalAndEnvironmentalSafety" type="text" minlength="1" autofocus/>
+   </label>
+   <label class="notificationName primaryTextColor">По батькові керівника органу Держтехногенбезпеки України 
+    <input class="amountNotification middleNameOfHeadOfStateTechnologicalAndEnvironmentalSafety input" placeholder="Посада керівника органу Держтехногенбезпеки України" name="positionOfHeadOfStateTechnologicalAndEnvironmentalSafety" type="text" minlength="1" autofocus/>
+ </label>
+      <button class="btn" type="submit">Cформувати повідомлення</button>
+  </form>
+</div>
+  </section>
+</div>
+       </div>
+      <!-- Ідентифікація об'єкта -->
+      <div id="myModalIdentification" class="modalIdentification modal">
+        <div class="modal-content main">
+          <span class="closeIdentification close">&times;</span>
+          <section class="calculation">
+            <div class="container ">
+              <h2 class="title1 primaryTextColor">Кількіть речовин</h2>
+              <ul>
+                <li>      
+                  <h3 class="calculation__name primaryTextColor">Кількість небезпечної реовини</h3>
+                  <input class="amount input" placeholder="Введіть кількість речовини" name="amount" type="number" min="0" maxlength="2" minlength="1" />
+                </li>
+              </ul>
+              <select class="selectDangerousSubstance">
+                  <option value disabled selected>Оберіть тип небезпечної речовини</option> 
+         
+                </select></li>
+                <button
+                class="submitFirstForm"
+                style="padding: 20px"
+                type="button"
+              > Додати небезпечну речовину</button>
+              </div>
+              </section>
+              <section class="secondSection calculation">
+                <div class="container">
+                <h2 class="title"></h2>
+                <ul class="calculationForm ">
+                </ul>
+                <!-- <button  class="submitFinaltForm"
+                style="padding: 20px"
+                type="button">Розрахувати</button> -->
+                </div>
+              </section>
+        </div>
+      </div>
+      
+    </main>
+    <footer>
+
+    </footer>
+    <script src="index.js" type="module"></script>
+</body>
+</html>

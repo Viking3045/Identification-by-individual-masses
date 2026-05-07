@@ -13,7 +13,7 @@ const mainRiskAssessment = document.querySelector(".mainRiskAssessment")
 selectDangerousSubstance.addEventListener("change", setOutputSubstance);
 submitFirstForm.addEventListener("click", submit);
 amountSubstance.addEventListener("change", submitAmount)
-// console.log("prikol", riskAssessmentCriteria)
+
 
 //__________________________________________________ІДЕНТИФІКАЦІЯ ОБ'ЄКТА_______________________________________
 
@@ -200,33 +200,3 @@ console.log("cherry", cherry)
 
     submitFirstForm.disabled = true;
 }
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-  
-
-
-
- 
-
-
-
-
-
-
-
-
-
-

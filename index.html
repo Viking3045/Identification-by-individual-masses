@@ -16,7 +16,12 @@
 
 <body>
   <header>
-  
+     <section class="calculation">
+      <div class="container">
+          <img src="./images/gerb.png" width="100" height="10" alt="">
+   </div>
+   </section>
+
   </header>
   <main class="mainIdentification">
     <section class="calculation">
@@ -25,7 +30,7 @@
             <ul>
               <li>
                 <h3 class="calculation__name primaryTextColor">Кількість небезпечної реовини (т)</h3>
-                <input class="amount input initialData__input" placeholder="Введіть кількість речовини" name="amount" type="number" min="0"
+                <input class=" input initialData__input amount" placeholder="Введіть кількість речовини" name="amount" type="number" min="0"
                   maxlength="2" minlength="1" />
               </li>
             </ul>
@@ -45,9 +50,55 @@
     </section>
 
   </main>
-  <footer>
+  <footer class="footer">
+<section class="calculation">
 
+        <div class="container">
+          <ul class="join__list">
+            <li class="join__item">
+              <a
+                class="join__link"
+                href="https://github.com/Viking3045/determining-the-height-of-the-tank-embankment"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="join__icon" width="34" height="34">
+                  <use href="./images/sprite.svg#github"></use>
+                </svg>
+              </a>
+            </li>
+  
+            <!-- <li class="join__item">
+              <a
+                class="join__link"
+                href="https://telegram.org/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="join__icon" width="34" height="34">
+                  <use href="./images/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li> -->
+  
+            <li class="join__item">
+              <a
+                class="join__link"
+                href="https://www.facebook.com/profile.php?id=100070495414338"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="join__icon" width="34" height="34">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="copyriting">Copyright © 2026 NUCP of Ukraine. Created by Vitalii Stepanenko</p> 
+        </div>
+      </section>
   </footer>
+     
   <script src="index.js" type="module"></script>
 </body>
 
